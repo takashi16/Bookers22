@@ -10,8 +10,9 @@ class PostsController < ApplicationController
 
     def create
     	post = Post.new(post_params)
+        post.user_id = current_user.id
         post.save
-        redirect_to post_path(post.id)
+        redirect_to user_path(current_user.id)
     end
 
     def index
@@ -39,7 +40,7 @@ class PostsController < ApplicationController
     private
 
 	def post_params
-        params.require(:post).permit(:title, :body, :category)
+        params.require(:post).permit(:title, :body, :user_id)
     end
 
 end
