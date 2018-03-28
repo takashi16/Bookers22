@@ -1,5 +1,7 @@
 # README
 
+wcp 武藤　 敬志　３月生徒
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
@@ -22,3 +24,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
