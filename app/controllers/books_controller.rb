@@ -1,5 +1,5 @@
 class BooksController < ApplicationController
-    before_action :authenticate_user!, only:[:edit, :update, :new, :destroy, :create]
+    before_action :authenticate_user!
 	def new
 		@books = User.all
 	end
